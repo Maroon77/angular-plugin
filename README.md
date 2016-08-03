@@ -1,0 +1,3 @@
+# angular-plugin
+### 项目中插件的创造与使用
+angular的很多插件是由angular团队开发或者由个人通过jquery插件封装的。一个项目中所有功能插件都由自己编写是不可能的 ，常用的angular插件有angular ui bootstrap和angularStrap.但是这两个插件有冲突，解决办法是在最外层的controller里依赖注入angular ui bootstrap的模块ui.bootstrap，在需要用的angularStrap功能的controller里单独依赖注入相应的功能模块，如mgcrea.ngStrap.aside、mgcrea.ngStrap.aside等。
